@@ -125,6 +125,50 @@
             letter-spacing: 3px;
         }
 
+        .project-card {
+          background: rgba(0, 0, 0, 0.7);
+          border: 1px solid rgba(0, 198, 255, 0.3);
+          border-radius: 15px;
+          padding: 20px;
+          margin-bottom: 20px;
+          text-align: center;
+          transition: transform 0.3s, box-shadow 0.3s;
+       }
+
+       .project-card:hover {
+         transform: translateY(-5px);
+         box-shadow: 0 10px 20px rgba(0, 198, 255, 0.3);
+       }
+
+       .project-title {
+         color: white;
+         font-size: 1.4em;
+         margin-bottom: 10px;
+       }
+
+      .project-description {
+        color: white;
+        font-size: 1.1em;
+        line-height: 1.6;
+        margin-bottom: 20px;
+      }
+
+      .view-project-btn {
+        background: linear-gradient(45deg, #00c6ff, #0072ff);
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 25px;
+        cursor: pointer;
+        transition: all 0.3s;
+      }
+
+      .view-project-btn:hover {
+        transform: scale(1.05);
+        box-shadow: 0 5px 15px rgba(0, 198, 255, 0.3);
+     }
+
+
         .certificates-grid {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
@@ -253,9 +297,29 @@
                     Thank you for visiting my page. Let’s connect, collaborate, and create something extraordinary together!
                     </p>
                     
-                    
             </section>
-
+          
+            <section id="projects-section" class="content-section">
+                <h1 class="welcome-msg">My Projects</h1>
+            
+                <div class="project-card">
+                    <h3 class="project-title">Workday Security at Providence</h3>
+                    <p class="project-description">
+                         Controls to Protect Sensitive Data and Enhance Access
+                    </p>
+                    <button class="view-project-btn" data-pdf="Workday-Providenc.pdf">View Project</button>
+                </div>
+            </section>
+            
+            <script>
+                document.querySelector('.view-project-btn').addEventListener('click', function() {
+                    var pdfFile = this.getAttribute('data-pdf');
+                    window.open(pdfFile, 'Workday-Providenc.pdf');
+                });
+            </script>
+            
+            
+             
             <!-- Certificates Section -->
             <section id="certificates-section" class="content-section">
                 <h1 class="welcome-msg">My Certificates</h1>
