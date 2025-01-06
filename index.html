@@ -405,20 +405,92 @@
                 </div>
             </section>
 
+           
             <!-- Projects Section -->
-            <section id="projects-section" class="content-section">
-                <h1 class="welcome-msg">My Projects</h1>
-                <!-- Add your projects content here -->
-            </section>
+<section id="security-section" class="content-section">
+    <h1 class="welcome-msg">Here you can learn how to defeat threat actors</h1>
+    <div class="button-container">
+        <!-- Buttons or additional content can be added here -->
+    </div>
+    
+    <a href="https://jnaimi.github.io/Cybersecurity-awarness/" target="_blank" class="learn-more-link">
+        Click me if you want to defeat threat actors
+    </a>
+</section>
 
-            <!-- Security Section -->
-            <section id="security-section" class="content-section">
-                <h1 class="welcome-msg">Here you can learn how to defeat threat actors</h1>
-                <div class="coming-soon-container">
-                    <p class="coming-soon">Coming Soon</p>
-                </div>
-                <!-- Add your security content here -->
-            </section>
+<style>
+    #security-section {
+        background: url('cybersecurity-background.jpg') no-repeat center center fixed; /* Replace with your desired background image */
+        background-size: cover;
+        padding: 50px;
+        text-align: center;
+        color: #fff;
+        border-radius: 10px;
+    }
+
+    .welcome-msg {
+        font-size: 2.5em;
+        font-weight: bold;
+        margin-bottom: 20px;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+
+    .button-container {
+        margin: 20px 0;
+    }
+
+    .learn-more-link {
+        display: inline-block;
+        background-color: transparent; /* Invisible background */
+        color: #fff;
+        padding: 15px 30px;
+        text-decoration: none;
+        font-size: 1.2em;
+        font-weight: bold;
+        border: 2px solid #3498db; /* Border to outline the button */
+        border-radius: 5px;
+        box-shadow: none;
+        transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .learn-more-link:hover {
+        background-color: #3498db; /* Blue background on hover */
+        box-shadow: 0 0 10px rgba(52, 152, 219, 0.7); /* Shadow on hover */
+    }
+
+    .learn-more-link:active {
+        background-color: #2980b9; /* Darker blue when clicked */
+        box-shadow: 0 0 15px rgba(52, 152, 219, 0.9); /* Shadow on click */
+    }
+
+    @media (max-width: 768px) {
+        .welcome-msg {
+            font-size: 1.8em;
+        }
+        
+        .learn-more-link {
+            font-size: 1em;
+            padding: 12px 25px;
+        }
+    }
+
+    @media (max-width: 480px) {
+        #security-section {
+            padding: 30px;
+        }
+
+        .welcome-msg {
+            font-size: 1.5em;
+        }
+
+        .learn-more-link {
+            font-size: 0.9em;
+            padding: 10px 20px;
+        }
+    }
+</style>
+
+        
             
             <style>
                 #security-section {
