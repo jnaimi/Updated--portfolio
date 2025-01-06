@@ -406,90 +406,76 @@
             </section>
 
            
-            <!-- Projects Section -->
+       <!-- Security Section -->
 <section id="security-section" class="content-section">
-    <h1 class="welcome-msg">Here you can learn how to defeat threat actors</h1>
-    <div class="button-container">
-        <!-- Buttons or additional content can be added here -->
+    <div class="security-container">
+        <a href="https://jnaimi.github.io/Cybersecurity-awarness/" target="_blank" class="learn-more-link">
+            Click me to learn
+        </a>
     </div>
-    
-    <a href="https://jnaimi.github.io/Cybersecurity-awarness/" target="_blank" class="learn-more-link">
-        Click me to learn
-    </a>
 </section>
 
 <style>
+    /* Specific styles for security section only */
     #security-section {
-        background: url('cybersecurity-background.jpg') no-repeat center center fixed; /* Replace with your desired background image */
-        background-size: cover;
-        padding: 50px;
-        text-align: center;
-        color: #fff;
-        border-radius: 10px;
+        position: relative;
+        min-height: 100vh;
+        background: rgba(0, 0, 0, 0.8);
+        display: none; /* Initially hidden until nav click */
     }
 
-    .welcome-msg {
-        font-size: 2.5em;
-        font-weight: bold;
-        margin-bottom: 20px;
-        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    .security-container {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
-    .button-container {
-        margin: 20px 0;
-    }
-
-    .learn-more-link {
+    #security-section .learn-more-link {
         display: inline-block;
-        background-color: transparent; /* Invisible background */
+        background-color: transparent;
         color: #fff;
         padding: 15px 30px;
         text-decoration: none;
         font-size: 1.2em;
         font-weight: bold;
-        border: 2px solid #3498db; /* Border to outline the button */
+        border: 2px solid #3498db;
         border-radius: 5px;
-        box-shadow: none;
-        transition: background-color 0.3s ease, box-shadow 0.3s ease;
+        transition: all 0.3s ease;
+        margin: 0;
     }
 
-    .learn-more-link:hover {
-        background-color: #3498db; /* Blue background on hover */
-        box-shadow: 0 0 10px rgba(52, 152, 219, 0.7); /* Shadow on hover */
+    #security-section .learn-more-link:hover {
+        background-color: #3498db;
+        box-shadow: 0 0 10px rgba(52, 152, 219, 0.7);
+        transform: scale(1.05);
     }
 
-    .learn-more-link:active {
-        background-color: #2980b9; /* Darker blue when clicked */
-        box-shadow: 0 0 15px rgba(52, 152, 219, 0.9); /* Shadow on click */
+    #security-section .learn-more-link:active {
+        background-color: #2980b9;
+        box-shadow: 0 0 15px rgba(52, 152, 219, 0.9);
+        transform: scale(0.95);
     }
 
+    /* Responsive design */
     @media (max-width: 768px) {
-        .welcome-msg {
-            font-size: 1.8em;
-        }
-        
-        .learn-more-link {
+        #security-section .learn-more-link {
             font-size: 1em;
             padding: 12px 25px;
         }
     }
 
     @media (max-width: 480px) {
-        #security-section {
-            padding: 30px;
-        }
-
-        .welcome-msg {
-            font-size: 1.5em;
-        }
-
-        .learn-more-link {
+        #security-section .learn-more-link {
             font-size: 0.9em;
             padding: 10px 20px;
         }
     }
 </style>
-
         
             
             <style>
