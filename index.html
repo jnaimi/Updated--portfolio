@@ -311,44 +311,35 @@
                 </div>
 
                 <div class="project-card">
-                    <h3 class="project-title">KPI/KRI Dashboard</h3>
+                    <h3 class="project-title">KPI/KRI Dashboard at Providence</h3>
                     <p class="project-description">
-                         Dashboard that has a visual of how many threats have been detected
+                        Dashboard that has a visual of how many threats have been detected
                     </p>
-                    <button class="view-project-btn" data-pdf="Coming Soon">View Project</button>
+                    <button class="view-project-btn" data-pdf="KRI dashboard.pdf">View Project</button>
                 </div>
 
                 <div class="project-card">
-                    <h3 class="project-title">Name of Project</h3>
+                    <h3 class="project-title">Zero Trust Security Model Implementation For Amazon Badge Office</h3>
                     <p class="project-description">
-                        Brief Description
+                        Zero Trust Security Model Implementation using Lenel OnGuard and Amazon Policies 
+
                     </p>
-                    <button class="view-project-btn" data-pdf="Coming Soon">View Project</button>
+                    <button class="view-project-btn" data-pdf="Zero trust.pdf">View Project</button>
                 </div>
 
-
                 <div class="project-card">
-                    <h3 class="project-title">Name of Project</h3>
+                    <h3 class="project-title">Work in Progress</h3>
                     <p class="project-description">
-                        Name of Project
-                    </p>
-                    <button class="view-project-btn" data-pdf="Coming Soon">View Project</button>
-                </div>
-
-
-                <div class="project-card">
-                    <h3 class="project-title">Name of Project</h3>
-                    <p class="project-description">
-                        Brief Description
+                        Detials will be available after the project is done. 
                     </p>
                     <button class="view-project-btn" data-pdf="Coming Soon">View Project</button>
                 </div>
 
 
                 <div class="project-card">
-                    <h3 class="project-title">Name of Project</h3>
+                    <h3 class="project-title">Work in Progress</h3>
                     <p class="project-description">
-                         Brief Description 
+                          Detials will be available after the project is done. 
                     </p>
                     <button class="view-project-btn" data-pdf="Coming Soon">View Project</button>
                 </div>
@@ -361,8 +352,31 @@
                 document.querySelector('.view-project-btn').addEventListener('click', function() {
                     var pdfFile = this.getAttribute('data-pdf');
                     window.open(pdfFile, 'Workday-Providenc.pdf');
+                
                 });
             </script>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // Select all buttons with class 'view-project-btn'
+        const projectButtons = document.querySelectorAll('.view-project-btn');
+        
+        // Add click event listener to each button
+        projectButtons.forEach(button => {
+            button.addEventListener('click', function() {
+                const pdfFile = this.getAttribute('data-pdf');
+                if (pdfFile) {
+                    try {
+                        window.open(pdfFile, '_blank');
+                    } catch (error) {
+                        console.error('Error opening PDF:', error);
+                    }
+                }
+            });
+        });
+    });
+    </script>
+          
             
             
              
